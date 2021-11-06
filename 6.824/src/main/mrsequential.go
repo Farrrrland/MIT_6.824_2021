@@ -47,6 +47,7 @@ func main() {
 		}
 		file.Close()
 		kva := mapf(filename, string(content))
+		// kva... enables append the slice element one by one rather than the whole slice (I guess so)
 		intermediate = append(intermediate, kva...)
 	}
 
